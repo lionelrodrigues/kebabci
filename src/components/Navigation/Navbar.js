@@ -12,7 +12,7 @@ function Navbar() {
         <img className="NavBar-logo" src="/images/logo.png" alt="logo" />
       </Link>
       <div className="Menu-icon" onClick={() => clicked(!clickval)}>
-        <i className={clickval ? "fas fa-times" : "fas fa-hamburger"}></i>
+        <i className={clickval ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
       <ul className={clickval ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
