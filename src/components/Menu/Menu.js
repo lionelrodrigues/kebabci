@@ -38,6 +38,16 @@ function Menu() {
           </div>
         );
       })}
+      <div className="sub-menu">
+        <div className="item1">
+          <div className="sub-items"></div>
+          <div className="sub-items"></div>
+        </div>
+        <div className="item1">
+          <div className="sub-items"></div>
+          <div className="sub-items"></div>
+        </div>
+      </div>
     </div>
   );
 }

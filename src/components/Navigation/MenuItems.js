@@ -11,17 +11,17 @@ export const MenuItems = [
   },
   {
     title: "Location",
-    url: "/location",
+    url: "/",
     cName: "nav-links",
   },
   {
     title: "Bulk Order",
-    url: "/bulk_order",
+    url: "/menu",
     cName: "nav-links-mobile",
   },
   {
     title: "Order Online",
-    url: "#",
+    url: "/",
     cName: "nav-links-mobile",
   },
 ];

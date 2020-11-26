@@ -16,17 +16,47 @@ function Navbar() {
       </div>
       <ul className={clickval ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link className={item.cName} to={item.url}>
-                {item.title}
-              </Link>
-            </li>
-          );
+          if (index !== 4)
+            return (
+              <li key={index}>
+                <Link className={item.cName} to={item.url}>
+                  {item.title}
+                </Link>
+              </li>
+            );
+          else
+            return (
+              <li key={index}>
+                <Link
+                  className={item.cName}
+                  to="route"
+                  target="_blank"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    window.open(
+                      "https://www.zomato.com/mangalore/kebabci-1-kodailbail"
+                    );
+                  }}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            );
         })}
       </ul>
-      <Button> Bulk Order </Button>
-      <Button>Order Online</Button>
+      <Link to="/menu">
+        <Button> Bulk Order </Button>
+      </Link>
+      <Link
+        to="route"
+        target="_blank"
+        onClick={(event) => {
+          event.preventDefault();
+          window.open("https://www.zomato.com/mangalore/kebabci-1-kodailbail");
+        }}
+      >
+        <Button>Order Online</Button>
+      </Link>
     </nav>
   );
 }

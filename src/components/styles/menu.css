@@ -27,6 +27,7 @@
   width: 15rem;
   border-radius: 20%;
   margin: 2rem 4rem;
+  border: none;
 }
 .header {
   color: white;
@@ -49,6 +50,19 @@
   padding: 1rem;
   color: #f7c059;
 }
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+.item1 {
+  display: flex;
+}
+.sub-items {
+  width: 50%;
+  height: 20vh;
+}
+
 @media screen and (max-width: 960px) {
   .menu-header {
     margin-left: 1rem;
