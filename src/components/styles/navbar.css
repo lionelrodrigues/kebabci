@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .NavBarItems {
-  background: hsla(39, 91%, 66%, 1);
+  background: #f7c059;
   background: linear-gradient(
     350deg,
     rgb(255, 197, 89) 45%,

@@ -3,7 +3,7 @@ import Navbar from "./components/Navigation/Navbar";
 import "./components/styles/App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Homepage/Home";
-import Menu from "./components/Menu";
+import Menu from "./components/Menu/Menu";
 import Location from "./components/Location";
 import Footer from "./components/Footer/Footer";
 
@@ -23,7 +23,7 @@ function App() {
             <Location />
           </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
