@@ -11,6 +11,9 @@ function Hero() {
         <i class="fab fa-instagram"></i>
         <i class="fas fa-map-marked-alt"></i>
       </div>
+      <div className="down">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </div>
   );
 }
